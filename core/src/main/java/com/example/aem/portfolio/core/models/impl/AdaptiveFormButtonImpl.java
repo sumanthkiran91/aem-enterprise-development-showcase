@@ -1,37 +1,59 @@
 package com.example.aem.portfolio.core.models.impl;
 
+import com.adobe.cq.export.json.ComponentExporter;
 import com.example.aem.portfolio.core.models.AdaptiveFormButton;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
+import org.apache.sling.models.annotations.Exporter;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
 @Model(
     adaptables = Resource.class,
-    adapters = AdaptiveFormButton.class,
-    resourceType = "enterprise-showcase/components/adaptive-form-button",
+    adapters = { AdaptiveFormButton.class, ComponentExporter.class },
+    resourceType = AdaptiveFormButtonImpl.RESOURCE_TYPE,
     defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
 )
-public class AdaptiveFormButtonImpl extends BaseComponentImpl implements AdaptiveFormButton {
+@Exporter(name = "jackson", extensions = "json")
+public class AdaptiveFormButtonImpl implements AdaptiveFormButton {
+
+    public static final String RESOURCE_TYPE = "enterprise-showcase/components/adaptive-form-button";
+
+    @ValueMapValue
+    private String id;
+
     @ValueMapValue
     private String label;
+
     @ValueMapValue
     private String action;
+
     @ValueMapValue
     private String ruleTarget;
 
     @Override
+    public String getId() {
+        return StringUtils.defaultIfBlank(id, "adaptive-form-button");
+    }
+
+    @Override
     public String getLabel() {
-        return label;
+        return StringUtils.defaultIfBlank(label, "Continue");
     }
 
     @Override
     public String getAction() {
-        return action;
+        return StringUtils.defaultIfBlank(action, "");
     }
 
     @Override
     public String getRuleTarget() {
-        return ruleTarget;
+        return StringUtils.defaultIfBlank(ruleTarget, "");
+    }
+
+    @Override
+    public String getExportedType() {
+        return RESOURCE_TYPE;
     }
 }

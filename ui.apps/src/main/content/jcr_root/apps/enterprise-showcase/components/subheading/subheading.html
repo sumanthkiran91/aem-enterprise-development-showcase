@@ -1,5 +1,2 @@
 <sly data-sly-use.model="com.example.aem.portfolio.core.models.Subheading"/>
-<section class="cmp-subheading ${model.centerAligned ? 'cmp-subheading--center' : ''}" id="${model.id}">
-    <h2>${model.heading}</h2>
-    <p data-sly-test="${model.description}">${model.description}</p>
-</section>
+<section id="${model.id}" class="cmp-subheading ${model.centerAlign ? 'cmp-subheading--center' : ''}"><h2>${model.heading}</h2><p data-sly-test="${model.description}">${model.description}</p></section>

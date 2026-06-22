@@ -1,5 +1,2 @@
 <sly data-sly-use.model="com.example.aem.portfolio.core.models.PageTitle"/>
-<section class="cmp-page-title cmp-page-title--${model.alignment}" id="${model.id}">
-    <h1 class="cmp-page-title__text">${model.title}</h1>
-    <p data-sly-test="${model.subtitle}" class="cmp-page-title__subtitle">${model.subtitle}</p>
-</section>
+<header id="${model.id}" class="cmp-page-title cmp-page-title--${model.alignment}"><h1>${model.title}</h1><p data-sly-test="${model.subtitle}">${model.subtitle}</p></header>

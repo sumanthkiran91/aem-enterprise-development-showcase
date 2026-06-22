@@ -9,13 +9,9 @@
                 <items jcr:primaryType="nt:unstructured">
                     <properties jcr:primaryType="nt:unstructured" jcr:title="Properties" sling:resourceType="granite/ui/components/coral/foundation/container">
                         <items jcr:primaryType="nt:unstructured">
-                            <modalTitle jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Modal Title" name="./modalTitle"/> <triggerLabel jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Trigger Label" name="./triggerLabel"/> <modalSize jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/select" fieldLabel="Modal Size" name="./modalSize">
-    <items jcr:primaryType="nt:unstructured">
-        <default jcr:primaryType="nt:unstructured" text="Default" value="default"/>
-        <primary jcr:primaryType="nt:unstructured" text="Primary" value="primary"/>
-        <secondary jcr:primaryType="nt:unstructured" text="Secondary" value="secondary"/>
-    </items>
-</modalSize>
+                            <modalTitle jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Modal Title" name="./modalTitle"/>
+                            <triggerLabel jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Trigger Label" name="./triggerLabel"/>
+                            <modalContent jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textarea" fieldLabel="Modal Content" name="./modalContent"/>
                         </items>
                     </properties>
                 </items>

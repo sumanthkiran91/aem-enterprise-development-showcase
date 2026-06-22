@@ -1,7 +1,10 @@
 package com.example.aem.portfolio.core.models;
 
+import com.adobe.cq.export.json.ComponentExporter;
+
 public interface DynamicTable extends ComponentExporter {
-    String getTitle();
+    String getId();
+    String getTableTitle();
     String getDataEndpoint();
-    String getResponsiveMode();
+    String getVariant();
 }

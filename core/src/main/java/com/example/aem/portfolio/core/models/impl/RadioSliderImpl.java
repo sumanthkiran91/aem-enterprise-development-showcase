@@ -1,44 +1,59 @@
 package com.example.aem.portfolio.core.models.impl;
 
+import com.adobe.cq.export.json.ComponentExporter;
 import com.example.aem.portfolio.core.models.RadioSlider;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
+import org.apache.sling.models.annotations.Exporter;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
 @Model(
     adaptables = Resource.class,
-    adapters = RadioSlider.class,
-    resourceType = "enterprise-showcase/components/radio-slider",
+    adapters = { RadioSlider.class, ComponentExporter.class },
+    resourceType = RadioSliderImpl.RESOURCE_TYPE,
     defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL
 )
-public class RadioSliderImpl extends BaseComponentImpl implements RadioSlider {
+@Exporter(name = "jackson", extensions = "json")
+public class RadioSliderImpl implements RadioSlider {
+
+    public static final String RESOURCE_TYPE = "enterprise-showcase/components/radio-slider";
+
     @ValueMapValue
-    private String name;
+    private String id;
+
+    @ValueMapValue
+    private String label;
+
     @ValueMapValue
     private String defaultValue;
+
     @ValueMapValue
-    private String minLabel;
-    @ValueMapValue
-    private String maxLabel;
+    private String options;
 
     @Override
-    public String getName() {
-        return name;
+    public String getId() {
+        return StringUtils.defaultIfBlank(id, "radio-slider");
+    }
+
+    @Override
+    public String getLabel() {
+        return StringUtils.defaultIfBlank(label, "Continue");
     }
 
     @Override
     public String getDefaultValue() {
-        return defaultValue;
+        return StringUtils.defaultIfBlank(defaultValue, "");
     }
 
     @Override
-    public String getMinLabel() {
-        return minLabel;
+    public String getOptions() {
+        return StringUtils.defaultIfBlank(options, "");
     }
 
     @Override
-    public String getMaxLabel() {
-        return maxLabel;
+    public String getExportedType() {
+        return RESOURCE_TYPE;
     }
 }

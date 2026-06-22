@@ -1,7 +1,1 @@
-{
-  "customerId": "CUST-1001",
-  "firstName": "Alex",
-  "lastName": "Taylor",
-  "email": "alex.taylor@example.com",
-  "status": "active"
-}
+{"id":"CUST-1001","status":"active","journeyStep":"review"}

@@ -1,6 +1,1 @@
-.cmp-dynamic-table {
-    margin-bottom: 1rem;
-}
-.cmp-dynamic-table * {
-    box-sizing: border-box;
-}
+.cmp-dynamic-table { box-sizing: border-box; }

@@ -1,0 +1,2 @@
+/0001 { /type "allow" /method "GET" /url "/content/enterprise-showcase/*" }
+/0002 { /type "deny" /url "/bin/*" }

@@ -1,8 +1,1 @@
-(function () {
-    "use strict";
-    document.addEventListener("DOMContentLoaded", function () {
-        document.querySelectorAll(".cmp-tabs-v1").forEach(function (component) {
-            component.dataset.initialized = "true";
-        });
-    });
-}());
+(function(){ console.debug('enterprise-showcase tabs-v1 loaded'); })();

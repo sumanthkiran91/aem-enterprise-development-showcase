@@ -1,8 +1,10 @@
 package com.example.aem.portfolio.core.models;
 
+import com.adobe.cq.export.json.ComponentExporter;
+
 public interface RadioSlider extends ComponentExporter {
-    String getName();
+    String getId();
+    String getLabel();
     String getDefaultValue();
-    String getMinLabel();
-    String getMaxLabel();
+    String getOptions();
 }

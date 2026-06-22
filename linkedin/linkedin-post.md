@@ -1,5 +1,3 @@
-I created a generic AEM Enterprise Portfolio repository to showcase Adobe Experience Manager architecture, component development, Sling Models, HTL, dialogs, ClientLibs, Dispatcher, Cloud Manager CI/CD, accessibility, security, and governance patterns.
+I built an industry-neutral AEM Enterprise Portfolio repository covering AEM architecture, component development, Sling Models, HTL, dialogs, ClientLibs, Dispatcher, Cloud Manager CI/CD, accessibility, security, and governance.
 
-This is an industry-neutral reference project designed for learning, interviews, and portfolio discussions.
-
-GitHub: <add your repository link here>
+GitHub: <add your repo link>

@@ -1,9 +1,2 @@
-<sly data-sly-use.model="com.example.aem.portfolio.core.models.Tabs"/>
-<div id="${model.id}" class="cmp-tabs cmp-tabs--${model.tabType} cmp-tabs--${model.tabStyle}" data-active-tab="${model.activeTab}">
-    <div class="cmp-tabs__list" role="tablist">
-        <button class="cmp-tabs__tab" role="tab">Overview</button>
-        <button class="cmp-tabs__tab" role="tab">Details</button>
-        <button class="cmp-tabs__tab" role="tab">Support</button>
-    </div>
-    <div class="cmp-tabs__panel" role="tabpanel">Author-configurable tab content placeholder.</div>
-</div>
+<sly data-sly-use.model="com.example.aem.portfolio.core.models.TabsV1"/>
+<div id="${model.id}" class="cmp-tabs cmp-tabs--${model.tabType} cmp-tabs--${model.tabStyle}" data-cmp-is="tabs"><button class="cmp-tabs__tab" aria-selected="true">Overview</button><button class="cmp-tabs__tab" aria-selected="false">Details</button><div class="cmp-tabs__panel">Authorable tab content placeholder.</div></div>

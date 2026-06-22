@@ -9,7 +9,11 @@
                 <items jcr:primaryType="nt:unstructured">
                     <properties jcr:primaryType="nt:unstructured" jcr:title="Properties" sling:resourceType="granite/ui/components/coral/foundation/container">
                         <items jcr:primaryType="nt:unstructured">
-                            <label jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Label" name="./label"/> <minValue jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Min Value" name="./minValue"/> <maxValue jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Max Value" name="./maxValue"/> <defaultValue jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Default Value" name="./defaultValue"/>
+                            <label jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Label" name="./label"/>
+                            <minValue jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/numberfield" fieldLabel="Minimum Value" name="./minValue"/>
+                            <maxValue jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/numberfield" fieldLabel="Maximum Value" name="./maxValue"/>
+                            <defaultValue jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/numberfield" fieldLabel="Default Value" name="./defaultValue"/>
+                            <showReset jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/checkbox" fieldLabel="Show Reset" name="./showReset" value="true" uncheckedValue="false"/>
                         </items>
                     </properties>
                 </items>

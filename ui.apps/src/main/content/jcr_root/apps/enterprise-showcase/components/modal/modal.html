@@ -1,9 +1,2 @@
 <sly data-sly-use.model="com.example.aem.portfolio.core.models.Modal"/>
-<div id="${model.id}" class="cmp-modal cmp-modal--${model.modalSize}">
-    <button class="cmp-modal__trigger" aria-haspopup="dialog">${model.triggerLabel}</button>
-    <div class="cmp-modal__dialog" role="dialog" aria-modal="true" aria-label="${model.modalTitle}" hidden>
-        <button class="cmp-modal__close" aria-label="Close">×</button>
-        <h2>${model.modalTitle}</h2>
-        <div class="cmp-modal__content"><sly data-sly-resource="${'content' @ resourceType='wcm/foundation/components/responsivegrid'}"/></div>
-    </div>
-</div>
+<div id="${model.id}" class="cmp-modal" data-cmp-is="modal"><button class="cmp-modal__trigger" aria-controls="${model.id}-dialog">${model.triggerLabel}</button><section id="${model.id}-dialog" class="cmp-modal__dialog is-hidden" role="dialog" aria-modal="true" aria-label="${model.modalTitle}"><h2>${model.modalTitle}</h2><p>${model.modalContent}</p><button class="cmp-modal__close">Close</button></section></div>

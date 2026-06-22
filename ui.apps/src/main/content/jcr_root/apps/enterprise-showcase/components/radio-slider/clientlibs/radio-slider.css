@@ -1,6 +1,1 @@
-.cmp-radio-slider {
-    margin-bottom: 1rem;
-}
-.cmp-radio-slider * {
-    box-sizing: border-box;
-}
+.cmp-radio-slider { box-sizing: border-box; }

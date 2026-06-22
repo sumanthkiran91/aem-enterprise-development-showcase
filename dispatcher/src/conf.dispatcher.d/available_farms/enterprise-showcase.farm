@@ -1,0 +1,3 @@
+/virtualhosts { "*" }
+/filter { $include "../filters/enterprise-showcase_filters.any" }
+/cache { /rules { /0000 { /glob "*" /type "allow" } } }

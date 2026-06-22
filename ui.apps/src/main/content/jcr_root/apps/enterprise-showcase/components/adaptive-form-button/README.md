@@ -1,11 +1,5 @@
 # Adaptive Form Button
 
-Portfolio component demonstrating:
+A generic AEM component example with component definition, Coral dialog, HTL, Sling Model interface, Sling Model implementation, and client libraries.
 
-- `.content.xml` component definition
-- `cq:dialog/.content.xml` authoring dialog
-- HTL rendering file
-- component ClientLib CSS/JS
-- Java interface and implementation Sling Model
-
-This is a generic example and should be customized for real project requirements.
+Resource type: `enterprise-showcase/components/adaptive-form-button`

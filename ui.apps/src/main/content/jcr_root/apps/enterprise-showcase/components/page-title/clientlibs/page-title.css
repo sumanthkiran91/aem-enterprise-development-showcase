@@ -1,6 +1,1 @@
-.cmp-page-title {
-    margin-bottom: 1rem;
-}
-.cmp-page-title * {
-    box-sizing: border-box;
-}
+.cmp-page-title { box-sizing: border-box; }
