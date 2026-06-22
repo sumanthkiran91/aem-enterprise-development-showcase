@@ -1,6 +1,7 @@
 {
   "customerId": "CUST-1001",
   "firstName": "Alex",
-  "lastName": "Morgan",
-  "journeyStatus": "IN_PROGRESS"
+  "lastName": "Taylor",
+  "email": "alex.taylor@example.com",
+  "status": "active"
 }

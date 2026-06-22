@@ -1,0 +1,4 @@
+:root { --spacing-1: 10px; --spacing-2: 20px; --spacing-3: 30px; --spacing-4: 40px; }
+.u-padding-x2 { padding: var(--spacing-2); }
+.u-padding-x4 { padding: var(--spacing-4); }
+@media (max-width: 767px) { .u-mobile-padding-x2 { padding: var(--spacing-2); } }

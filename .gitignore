@@ -1,6 +1,6 @@
 target/
+node_modules/
+.DS_Store
+*.iml
 .idea/
 .vscode/
-.DS_Store
-node_modules/
-*.log

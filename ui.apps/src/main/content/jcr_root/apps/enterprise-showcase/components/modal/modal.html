@@ -1,0 +1,8 @@
+<div class="cmp-modal" data-cmp-is="modal" id="${properties.modalId}">
+    <button class="cmp-modal__trigger" aria-controls="${properties.modalId}" aria-expanded="false">${properties.triggerLabel}</button>
+    <section class="cmp-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="${properties.modalId}-title" hidden>
+        <h2 id="${properties.modalId}-title">${properties.title}</h2>
+        <div class="cmp-modal__content">${properties.content @ context='html'}</div>
+        <button class="cmp-modal__close">Close</button>
+    </section>
+</div>

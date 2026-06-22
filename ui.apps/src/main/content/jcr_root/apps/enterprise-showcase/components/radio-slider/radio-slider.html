@@ -1,0 +1,6 @@
+<div class="cmp-radio-slider" data-cmp-is="radio-slider" data-default-value="${properties.defaultValue}">
+    <label data-sly-repeat.option="${resource.children}">
+        <input type="radio" name="${resource.name}" value="${option.valueMap.value}" checked="${option.valueMap.value == properties.defaultValue}" />
+        <span>${option.valueMap.label}</span>
+    </label>
+</div>

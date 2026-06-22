@@ -1,0 +1,14 @@
+{
+  "products": [
+    {
+      "id": "P100",
+      "name": "Standard Plan",
+      "status": "available"
+    },
+    {
+      "id": "P200",
+      "name": "Premium Plan",
+      "status": "available"
+    }
+  ]
+}

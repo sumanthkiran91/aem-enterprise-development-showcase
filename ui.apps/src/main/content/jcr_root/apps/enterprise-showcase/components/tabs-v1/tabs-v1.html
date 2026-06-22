@@ -1,0 +1,9 @@
+<sly data-sly-use.model="com.example.aem.portfolio.core.models.TabsModel" />
+<div class="cmp-tabs cmp-tabs--${model.tabType @ context='attribute'} cmp-tabs--${model.tabStyle @ context='attribute'}" data-cmp-is="tabs">
+    <div class="cmp-tabs__tablist" role="tablist">
+        <button data-sly-repeat.tab="${model.tabs}" class="cmp-tabs__tab" role="tab">${tab.valueMap.tabTitle}</button>
+    </div>
+    <div data-sly-repeat.panel="${model.tabs}" class="cmp-tabs__panel" role="tabpanel">
+        ${panel.valueMap.tabContent @ context='html'}
+    </div>
+</div>

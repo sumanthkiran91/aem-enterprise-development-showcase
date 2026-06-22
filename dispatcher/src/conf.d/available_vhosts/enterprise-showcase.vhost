@@ -1,0 +1,8 @@
+<VirtualHost *:80>
+    ServerName enterprise-showcase.local
+    DocumentRoot /mnt/var/www/html
+    <Directory /mnt/var/www/html>
+        AllowOverride None
+        Require all granted
+    </Directory>
+</VirtualHost>
