@@ -1,0 +1,8 @@
+flowchart LR
+A[User] --> B[Dispatcher]
+B --> C[AEM Publish]
+C --> D[Sling Resolution]
+D --> E[HTL + Sling Model]
+E --> F[Content Repository]
+F --> G[Response]
+G --> A

@@ -1,0 +1,5 @@
+<sly data-sly-use.model="com.example.aem.core.models.ctaButton"></sly>
+<section class="cmp-cta-button" data-cmp-is="cta-button">
+    <h2 class="cmp-cta-button__title">${model.label @ context='html'}</h2>
+    <div class="cmp-cta-button__content">${model.url @ context='html'}</div>
+</section>

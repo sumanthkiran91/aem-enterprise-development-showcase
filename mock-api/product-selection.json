@@ -1,0 +1,12 @@
+{
+  "products": [
+    {
+      "id": "P001",
+      "name": "Standard Service"
+    },
+    {
+      "id": "P002",
+      "name": "Premium Service"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+<sly data-sly-use.model="com.example.aem.core.models.dynamicTable"></sly>
+<section class="cmp-dynamic-table" data-cmp-is="dynamic-table">
+    <h2 class="cmp-dynamic-table__title">${model.tableTitle @ context='html'}</h2>
+    <div class="cmp-dynamic-table__content">${model.variant @ context='html'}</div>
+</section>
