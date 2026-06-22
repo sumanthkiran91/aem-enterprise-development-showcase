@@ -1,6 +1,9 @@
-<div class="cmp-radio-slider" data-cmp-is="radio-slider" data-default-value="${properties.defaultValue}">
-    <label data-sly-repeat.option="${resource.children}">
-        <input type="radio" name="${resource.name}" value="${option.valueMap.value}" checked="${option.valueMap.value == properties.defaultValue}" />
-        <span>${option.valueMap.label}</span>
-    </label>
+<sly data-sly-use.model="com.example.aem.portfolio.core.models.RadioSlider"/>
+<div id="${model.id}" class="cmp-radio-slider" data-default-value="${model.defaultValue}">
+    <span>${model.minLabel}</span>
+    <label><input type="radio" name="${model.name}" value="1">1</label>
+    <label><input type="radio" name="${model.name}" value="2">2</label>
+    <label><input type="radio" name="${model.name}" value="3">3</label>
+    <label><input type="radio" name="${model.name}" value="4">4</label>
+    <span>${model.maxLabel}</span>
 </div>

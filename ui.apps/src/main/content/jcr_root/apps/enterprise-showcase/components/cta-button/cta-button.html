@@ -1,3 +1,4 @@
-<a class="cmp-cta-button cmp-cta-button--${properties.variant || 'primary'}" href="${properties.link}" target="${properties.openInNewTab ? '_blank' : '_self'}">
-    ${properties.label}
+<sly data-sly-use.model="com.example.aem.portfolio.core.models.CtaButton"/>
+<a id="${model.id}" class="cmp-cta-button cmp-cta-button--${model.variant}" href="${model.url}" target="${model.openInNewTab ? '_blank' : '_self'}" rel="${model.openInNewTab ? 'noopener noreferrer' : ''}">
+    ${model.label}
 </a>

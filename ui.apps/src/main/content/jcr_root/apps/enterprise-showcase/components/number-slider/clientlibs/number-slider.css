@@ -1,0 +1,6 @@
+.cmp-number-slider {
+    margin-bottom: 1rem;
+}
+.cmp-number-slider * {
+    box-sizing: border-box;
+}

@@ -1,4 +1,3 @@
-/0001 { /type "allow" /url "/content/enterprise-showcase/*" }
-/0002 { /type "allow" /url "/etc.clientlibs/enterprise-showcase/*" }
-/0100 { /type "deny" /url "/crx/*" }
-/0101 { /type "deny" /url "/system/*" }
+/0001 { /type "allow" /method "GET" /url "/content/enterprise-showcase/*" }
+/0002 { /type "deny" /url "/bin/*" }
+/0003 { /type "allow" /method "GET" /url "/bin/enterprise-showcase/status" }

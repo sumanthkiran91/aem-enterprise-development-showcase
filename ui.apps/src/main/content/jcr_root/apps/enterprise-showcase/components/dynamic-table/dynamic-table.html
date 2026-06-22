@@ -1,11 +1,8 @@
-<sly data-sly-use.model="com.example.aem.portfolio.core.models.DynamicTableModel" />
-<table class="cmp-dynamic-table">
-    <caption data-sly-test="${properties.caption}">${properties.caption}</caption>
-    <tbody>
-        <tr data-sly-repeat.row="${model.rows}">
-            <td>${row.valueMap.label}</td>
-            <td>${row.valueMap.value}</td>
-            <td data-sly-test="${row.valueMap.status}">${row.valueMap.status}</td>
-        </tr>
-    </tbody>
-</table>
+<sly data-sly-use.model="com.example.aem.portfolio.core.models.DynamicTable"/>
+<div id="${model.id}" class="cmp-dynamic-table" data-endpoint="${model.dataEndpoint}">
+    <h2>${model.title}</h2>
+    <table>
+        <thead><tr><th>Name</th><th>Status</th><th>Updated</th></tr></thead>
+        <tbody><tr><td>Sample Item</td><td>Active</td><td>Today</td></tr></tbody>
+    </table>
+</div>

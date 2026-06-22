@@ -1,7 +1,5 @@
-I created a generic AEM Enterprise Portfolio repository to showcase practical Adobe Experience Manager development patterns across architecture, component development, Adaptive Forms concepts, Dispatcher caching, Cloud Manager CI/CD, accessibility, security, and content governance.
+I created a generic AEM Enterprise Portfolio repository to showcase Adobe Experience Manager architecture, component development, Sling Models, HTL, dialogs, ClientLibs, Dispatcher, Cloud Manager CI/CD, accessibility, security, and governance patterns.
 
-The repository is industry-neutral and structured like a real AEM project with `core`, `ui.apps`, `ui.content`, `ui.frontend`, `dispatcher`, documentation, diagrams, and mock APIs.
+This is an industry-neutral reference project designed for learning, interviews, and portfolio discussions.
 
 GitHub: <add your repository link here>
-
-This project is intended as a portfolio and learning reference for AEM Developer, Senior AEM Developer, AEM Lead, and AEM Architect roles.

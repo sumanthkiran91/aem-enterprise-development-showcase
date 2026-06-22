@@ -1,3 +1,4 @@
-<button class="cmp-af-button" type="button" data-action="${properties.action}" data-rule-target="${properties.ruleTarget}">
-    ${properties.label}
+<sly data-sly-use.model="com.example.aem.portfolio.core.models.AdaptiveFormButton"/>
+<button id="${model.id}" class="cmp-af-button" type="button" data-action="${model.action}" data-rule-target="${model.ruleTarget}">
+    ${model.label}
 </button>

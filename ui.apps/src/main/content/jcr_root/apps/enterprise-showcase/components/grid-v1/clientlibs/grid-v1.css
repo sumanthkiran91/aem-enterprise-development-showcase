@@ -1,0 +1,6 @@
+.cmp-grid-v1 {
+    margin-bottom: 1rem;
+}
+.cmp-grid-v1 * {
+    box-sizing: border-box;
+}

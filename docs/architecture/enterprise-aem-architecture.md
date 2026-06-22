@@ -1,34 +1,19 @@
 # Enterprise AEM Architecture
 
-This document explains a generic AEM enterprise architecture suitable for multiple industries.
-
-## Core Layers
-
-1. Browser / client application
-2. CDN or edge layer
-3. Dispatcher
-4. AEM Publish
-5. AEM Author
-6. Cloud Manager CI/CD
-7. Git repository
-8. Integration and service layer
+This document explains a generic AEM architecture covering Author, Publish, Dispatcher, CDN, Git, Cloud Manager, and content governance.
 
 ```mermaid
-flowchart TD
-    Browser --> CDN
-    CDN --> Dispatcher
-    Dispatcher --> Publish
-    Author --> Publish
-    Git --> CloudManager
-    CloudManager --> Author
-    CloudManager --> Publish
-    Publish --> Services[External Services / APIs]
+sequenceDiagram
+    participant Dev as Developer
+    participant Git as Git Repository
+    participant CM as Cloud Manager
+    participant Author as AEM Author
+    participant Publish as AEM Publish
+    participant Dispatcher as Dispatcher
+    Dev->>Git: Commit code
+    Git->>CM: Trigger pipeline
+    CM->>Author: Deploy author artifacts
+    CM->>Publish: Deploy publish artifacts
+    Author->>Publish: Publish content
+    Dispatcher->>Publish: Cacheable request
 ```
-
-## Key Responsibilities
-
-- Author is used for content creation and component configuration.
-- Publish serves approved content to customers.
-- Dispatcher caches and filters requests.
-- Cloud Manager deploys code and configuration.
-- Git maintains version-controlled implementation.

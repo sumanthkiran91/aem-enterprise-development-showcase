@@ -1,4 +1,4 @@
-<sly data-sly-use.model="com.example.aem.portfolio.core.models.GridModel" />
-<div class="cmp-grid ${model.desktopSpacing} ${model.mobileSpacing} ${model.removeBottomMargin ? 'cmp-grid--no-bottom-margin' : ''}">
-    <sly data-sly-resource="${'container' @ resourceType='wcm/foundation/components/responsivegrid'}" />
+<sly data-sly-use.model="com.example.aem.portfolio.core.models.Grid"/>
+<div id="${model.id}" class="cmp-grid cmp-grid--${model.columns} cmp-grid--desktop-${model.desktopSpacing} cmp-grid--mobile-${model.mobileSpacing}">
+    <sly data-sly-resource="${'container' @ resourceType='wcm/foundation/components/responsivegrid'}"/>
 </div>

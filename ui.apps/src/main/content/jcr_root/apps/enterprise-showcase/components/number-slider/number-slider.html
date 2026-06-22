@@ -1,5 +1,6 @@
-<div class="cmp-number-slider" data-cmp-is="number-slider" data-original-value="${properties.originalValue}">
-    <label>${properties.label}</label>
-    <input type="range" min="${properties.min}" max="${properties.max}" value="${properties.originalValue}" />
+<sly data-sly-use.model="com.example.aem.portfolio.core.models.NumberSlider"/>
+<div id="${model.id}" class="cmp-number-slider" data-default-value="${model.defaultValue}">
+    <label>${model.label}</label>
+    <input type="range" min="${model.minValue}" max="${model.maxValue}" value="${model.defaultValue}">
     <button class="cmp-number-slider__reset" hidden>Reset to original estimate</button>
 </div>

@@ -1,0 +1,6 @@
+.cmp-modal {
+    margin-bottom: 1rem;
+}
+.cmp-modal * {
+    box-sizing: border-box;
+}

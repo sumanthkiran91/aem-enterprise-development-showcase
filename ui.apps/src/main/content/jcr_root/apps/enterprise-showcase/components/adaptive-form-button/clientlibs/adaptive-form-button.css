@@ -1,0 +1,6 @@
+.cmp-adaptive-form-button {
+    margin-bottom: 1rem;
+}
+.cmp-adaptive-form-button * {
+    box-sizing: border-box;
+}

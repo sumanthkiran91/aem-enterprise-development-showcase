@@ -1,10 +1,8 @@
 # Accessibility Checklist
 
 - Use semantic HTML.
-- Provide accessible names for interactive elements.
-- Avoid empty `aria-describedby` values.
-- Ensure keyboard navigation.
-- Maintain visible focus indicators.
+- Ensure buttons have accessible names.
+- Avoid empty `aria-describedby` references.
+- Maintain keyboard navigation.
+- Test focus states.
 - Validate color contrast.
-- Use correct heading hierarchy.
-- Test modals with focus trap behavior.

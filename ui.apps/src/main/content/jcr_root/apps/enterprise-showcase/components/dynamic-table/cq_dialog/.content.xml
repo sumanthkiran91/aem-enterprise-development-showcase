@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Dynamic Table"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties jcr:primaryType="nt:unstructured" jcr:title="Properties" sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <title jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Title" name="./title"/> <dataEndpoint jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" fieldLabel="Data Endpoint" name="./dataEndpoint"/> <responsiveMode jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/form/select" fieldLabel="Responsive Mode" name="./responsiveMode">
+    <items jcr:primaryType="nt:unstructured">
+        <default jcr:primaryType="nt:unstructured" text="Default" value="default"/>
+        <primary jcr:primaryType="nt:unstructured" text="Primary" value="primary"/>
+        <secondary jcr:primaryType="nt:unstructured" text="Secondary" value="secondary"/>
+    </items>
+</responsiveMode>
+                        </items>
+                    </properties>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

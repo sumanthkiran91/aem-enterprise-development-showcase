@@ -1,0 +1,6 @@
+.cmp-subheading {
+    margin-bottom: 1rem;
+}
+.cmp-subheading * {
+    box-sizing: border-box;
+}

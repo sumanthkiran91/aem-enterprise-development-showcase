@@ -1,7 +1,5 @@
 /rules {
-  /0000 { /glob "*" /type "allow" }
+  /0001 { /glob "*.html" /type "allow" }
+  /0002 { /glob "*.json" /type "allow" }
 }
-/invalidate {
-  /0000 { /glob "*.html" /type "allow" }
-  /0001 { /glob "*.json" /type "allow" }
-}
+/invalidate { /0001 { /glob "*.html" /type "allow" } }

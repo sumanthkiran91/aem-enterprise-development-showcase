@@ -1,0 +1,6 @@
+.cmp-cta-button {
+    margin-bottom: 1rem;
+}
+.cmp-cta-button * {
+    box-sizing: border-box;
+}
